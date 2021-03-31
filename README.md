@@ -1,6 +1,6 @@
 ## Overview
 
-_**United Motors** is a full stack app that is designed to be utilized by a local car dealership. United Motors is a local car dealership in Deer Park, NY that has been around since 2006. Due to Covid19 and the economic recession that followed, they are in dire need of a website that will allow potential customers to browse through their inventory online from the safety of their home and also make appointments for test-drives. Admins and employees of United Motors will be able to add, update and delete cars as their collection changes._
+_**United Motors** is a full stack app that is designed to be utilized by a local car dealership. United Motors is a local car dealership in Deer Park, NY that has been around since 2006. Due to Covid19 and the economic recession that followed, they are in dire need of a website that will allow potential customers to browse through their inventory online from the safety of their home and also make appointments for viewing and test-drives. Admins and employees of United Motors will be able to add, update and delete cars as their collection changes._
 <br>
 
 ## MVP
@@ -13,9 +13,11 @@ _The **United Motors** App will allow users to browse through all available cars
 
 - _Create models to accurately depict the ERD_
 - _Create database with CRUD functionality using Ruby-on-Rails_
+- _Utilize RESTful JSON endpoints_
 - _Implement User Authentication and Association for cars and appointments_
 - _Render different routes based on user credentials on the frontend_
-- _Use React to create the wireframes_
+- _Render data using functional and class React components_
+- _Use CSS to create the wireframes_
 - _Implement search feature by makes and models_
 - _Responsive design on mobile and desktop devices_
 
@@ -27,8 +29,10 @@ _The **United Motors** App will allow users to browse through all available cars
 | :-------------: | :------------------------------------------------------------------ |
 |      React      | _Front End Framework for client view_                               |
 |  React Router   | _Render different routes based on user credentials on the frontend_ |
+|      Axios      | _Access and get data back from the API_                             |
 |  Ruby On Rails  | _Back end framework to design and manage the database_              |
 | React Bootstrap | _Hamburger Menu for mobile view_                                    |
+|   jwt/bcrypt    | _User Authorization for sign-up/sign-in_                            |
 
 <br>
 
@@ -36,7 +40,7 @@ _The **United Motors** App will allow users to browse through all available cars
 
 #### Wireframes
 
-![AdobeXD Link](url)
+![AdobeXD Link](https://xd.adobe.com/view/ceda8ceb-1c68-4d63-9839-ad515ba909c2-9b89/)
 
 #### Component Tree
 
@@ -49,6 +53,8 @@ _The **United Motors** App will allow users to browse through all available cars
 src
 |__ components/
   |__ Modal.jsx/
+  |__ EditButton.jsx/
+  |__ DeleteButton.jsx/
 |__ containers/
   |__ MainContainer.jsx/
   |__AppointmentContainer.jsx/
@@ -67,6 +73,13 @@ src
   |__ SignUp.jsx/
   |__ SignIn.jsx/
 |__ services/
+  |__api-config.js
+  |__auth.js
+  |__users.js
+  |__cars.js
+  |__appointments.js
+  |__makes.js
+  |__models.js
 ```
 
 #### Time Estimates
@@ -93,8 +106,7 @@ src
 | Build out and test all appointments, create appointment, update appointment and delete appoinement screen |    M     |     3 hrs      |      TBD      |     TBD     |
 | Style to replicate wireframes                                                                             |    M     |     6 hrs      |      TBD      |     TBD     |
 | Implement media queries for mobile view                                                                   |    M     |     4 hrs      |      TBD      |     TBD     |
-
-| TOTAL | | 51 hrs | TBD| TBD |
+| Total                                                                                                     |          |     51 hrs     |      TBD      |     TBD     |
 
 <br>
 
