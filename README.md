@@ -5,7 +5,7 @@ _**United Motors** is a full stack app that is designed to be utilized by a loca
 
 ## MVP
 
-_The **United Motors** App will allow users to browse through all available cars in the current inventory, look at individual car details and make appointment for a test-drive if they are interested in a specific car. They can narrow their search by car makes and models. Employees of United Motors will be able to add new cars, make changes to their existing cars and delete cars from the inventory as they are sold._
+_The **United Motors** App will allow users to browse through all available cars in the current inventory, look at individual car details. They can narrow their search by car makes and models. Employees of United Motors will be able to add new cars, make changes to their existing cars and delete cars from the inventory as they are sold._
 <br>
 
 ### Goals
@@ -13,7 +13,7 @@ _The **United Motors** App will allow users to browse through all available cars
 - _Create models to accurately depict the ERD_
 - _Create database with CRUD functionality using Ruby-on-Rails_
 - _Utilize RESTful JSON endpoints_
-- _Implement User Authentication and Association for cars and appointments_
+- _Implement User Authentication and Association for cars_
 - _Render different routes based on user credentials on the frontend_
 - _Render data using functional and class React components_
 - _Use CSS to create the wireframes_
@@ -53,7 +53,6 @@ src
   |__ Modal.jsx/
 |__ containers/
   |__ MainContainer.jsx/
-  |__ AppointmentContainer.jsx/
 |__ layout/
   |__ Layout.jsx/
     |__ Nav.jsx/
@@ -62,9 +61,8 @@ src
   |__ AllCars.jsx/
   |__ MyCars.jsx/
   |__ CarDetail.jsx/
-  |__ Appointments/
-      |__CreateAppointment.jsx
-      |__AllAppointments.jsx
+    |__AllAppointments.jsx
+  |__CreateAppointment.jsx
   |__ UpdateCar.jsx/
   |__ CreateCar.jsx/
   |__ AllModels.jsx/
@@ -120,6 +118,7 @@ src
 
 ## Post-MVP
 
+- _Allow users to view and create appointments for cars they are interested in_
 - _Create a landing page with additional branding and carousal_
 - _Additional user association where users can save their favorite cars_
 - _Sort functionality by ascending and descending price and mileage_
