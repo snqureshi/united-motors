@@ -6,7 +6,6 @@ _**United Motors** is a full stack app that is designed to be utilized by a loca
 ## MVP
 
 _The **United Motors** App will allow users to browse through all available cars in the current inventory, look at individual car details and make appointment for a test-drive if they are interested in a specific car. They can narrow their search by car makes and models. Employees of United Motors will be able to add new cars, make changes to their existing cars and delete cars from the inventory as they are sold._
-
 <br>
 
 ### Goals
@@ -20,8 +19,7 @@ _The **United Motors** App will allow users to browse through all available cars
 - _Use CSS to create the wireframes_
 - _Implement search feature by makes and models_
 - _Responsive design on mobile and desktop devices_
-
-<br>
+  <br>
 
 ### Libraries and Dependencies
 
@@ -40,7 +38,7 @@ _The **United Motors** App will allow users to browse through all available cars
 
 #### Wireframes
 
-![AdobeXD Link](https://xd.adobe.com/view/ceda8ceb-1c68-4d63-9839-ad515ba909c2-9b89/)
+[AdobeXD Link](https://xd.adobe.com/view/ceda8ceb-1c68-4d63-9839-ad515ba909c2-9b89/)
 
 #### Component Tree
 
@@ -53,18 +51,17 @@ _The **United Motors** App will allow users to browse through all available cars
 src
 |__ components/
   |__ Modal.jsx/
-  |__ EditButton.jsx/
-  |__ DeleteButton.jsx/
 |__ containers/
   |__ MainContainer.jsx/
-  |__AppointmentContainer.jsx/
+  |__ AppointmentContainer.jsx/
 |__ layout/
   |__ Layout.jsx/
+    |__ Nav.jsx/
+    |__ Footer.jsx/
 |__ screens/
   |__ AllCars.jsx/
   |__ CarDetail.jsx/
     |__CreateAppointment.jsx
-    |__UpdateAppointment.jsx
     |__AllAppointments.jsx
   |__ UpdateCar.jsx/
   |__ CreateCar.jsx/
