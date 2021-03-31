@@ -60,9 +60,11 @@ src
     |__ Footer.jsx/
 |__ screens/
   |__ AllCars.jsx/
+  |__ MyCars.jsx/
   |__ CarDetail.jsx/
-    |__CreateAppointment.jsx
-    |__AllAppointments.jsx
+  |__ Appointments/
+      |__CreateAppointment.jsx
+      |__AllAppointments.jsx
   |__ UpdateCar.jsx/
   |__ CreateCar.jsx/
   |__ AllModels.jsx/
@@ -120,6 +122,7 @@ src
 
 - _Create a landing page with additional branding and carousal_
 - _Additional user association where users can save their favorite cars_
+- _Sort functionality by ascending and descending price and mileage_
 - _Implement User Restriction so that only verified admins can access crud functionality for cars and other users can only access crud functionality on appoinments_
 - _Research websockets to implement chatbox to answer user inquiries in real time_
 
