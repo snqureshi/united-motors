@@ -13,7 +13,11 @@ _The **United Motors** App will allow users to browse through all available cars
 
 - _Create models to accurately depict the ERD_
 - _Create database with CRUD functionality using Ruby-on-Rails_
-- _Implement User Authentication and Association for cars and appointments_ -_Render different routes based on user credentials on the frontend_ -_Use React to create the wireframes_ -_Implement search feature by makes and models_ -_Responsive design on mobile and desktop devices_
+- _Implement User Authentication and Association for cars and appointments_
+- _Render different routes based on user credentials on the frontend_
+- _Use React to create the wireframes_
+- _Implement search feature by makes and models_
+- _Responsive design on mobile and desktop devices_
 
 <br>
 
