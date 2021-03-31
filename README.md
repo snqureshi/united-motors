@@ -1,38 +1,30 @@
 ## Overview
 
-_**United Motors** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+_**United Motors** is a full stack app that is designed to be utilized by a local car dealership. United Motors is a local car dealership in Deer Park, NY that has been around since 2006. Due to Covid19 and the economic recession that followed, they are in dire need of a website that will allow potential customers to browse through their inventory online from the safety of their home and also make appointments for test-drives. Admins and employees of United Motors will be able to add, update and delete cars as their collection changes._
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **United Motors** App will allow users to browse through all available cars in the current inventory, look at individual car details and make appointment for a test-drive if they are interested in a specific car. They can narrow their search by car makes and models. Employees of United Motors will be able to add new cars, make changes to their existing cars and delete cars from the inventory as they are sold._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Create models to accurately depict the ERD_
+- _Create database with CRUD functionality using Ruby-on-Rails_
+- _Implement User Authentication and Association for cars and appointments_ -_Render different routes based on user credentials on the frontend_ -_Use React to create the wireframes_ -_Implement search feature by makes and models_ -_Responsive design on mobile and desktop devices_
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library     | Description                                                         |
+| :-------------: | :------------------------------------------------------------------ |
+|      React      | _Front End Framework for client view_                               |
+|  React Router   | _Render different routes based on user credentials on the frontend_ |
+|  Ruby On Rails  | _Back end framework to design and manage the database_              |
+| React Bootstrap | _Hamburger Menu for mobile view_                                    |
 
 <br>
 
@@ -40,67 +32,65 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+![AdobeXD Link](url)
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+[Component Tree](https://whimsical.com/unitedmotorsapp-JZwDFHKaQf7bqiEU6DYUQ8)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
 
 ```structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+  |__ Modal.jsx/
+|__ containers/
+  |__ MainContainer.jsx/
+  |__AppointmentContainer.jsx/
+|__ layout/
+  |__ Layout.jsx/
+|__ screens/
+  |__ AllCars.jsx/
+  |__ CarDetail.jsx/
+    |__CreateAppointment.jsx
+    |__UpdateAppointment.jsx
+    |__AllAppointments.jsx
+  |__ UpdateCar.jsx/
+  |__ CreateCar.jsx/
+  |__ AllModels.jsx/
+  |__ AllMakes.jsx/
+  |__ SignUp.jsx/
+  |__ SignIn.jsx/
 |__ services/
-
 ```
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
+| Task                                                                                                      | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------------------------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Initial Setup (Setting up models and migration files/Cors)                                                |    H     |     3 hrs      |      TBD      |     TBD     |
+| Create CRUD Actions in controller files for Cars                                                          |    H     |     2 hrs      |      TBD      |     TBD     |
+| Create CRUD Actions in controller files for Models                                                        |    H     |      1 hr      |      TBD      |     TBD     |
+| Create CRUD Actions in controller files for Makes                                                         |    H     |      1 hr      |      TBD      |     TBD     |
+| Create CRUD Actions in controller files for Users                                                         |    H     |    2.5 hrs     |      TBD      |     TBD     |
+| Set up Authentication controller                                                                          |    H     |    2.5 hrs     |      TBD      |     TBD     |
+| Create CRUD Actions in controller files for Appointments                                                  |    H     |     2 hrs      |      TBD      |     TBD     |
+| Setup React Components                                                                                    |    H     |     2 hrs      |      TBD      |     TBD     |
+| Connect and test backend/frontend relationship in services                                                |    H     |     3 hrs      |      TBD      |     TBD     |
+| Build out frontend CRUD in main container for cars                                                        |    H     |     3 hrs      |      TBD      |     TBD     |
+| Build out frontend CRUD in appointment container for appointments                                         |    H     |     3 hrs      |      TBD      |     TBD     |
+| Build out sign up and sign in screens                                                                     |    H     |     2 hrs      |      TBD      |     TBD     |
+| Build out and test all cars screen                                                                        |    H     |     2 hrs      |      TBD      |     TBD     |
+| Build out and test car details screen                                                                     |    H     |     2 hrs      |      TBD      |     TBD     |
+| Build out and test update car screen                                                                      |    H     |     2 hrs      |      TBD      |     TBD     |
+| Build out and test create car screen                                                                      |    H     |     2 hrs      |      TBD      |     TBD     |
+| Build out and test all makes and models screens                                                           |    L     |     3 hrs      |      TBD      |     TBD     |
+| Build out and test all appointments, create appointment, update appointment and delete appoinement screen |    M     |     3 hrs      |      TBD      |     TBD     |
+| Style to replicate wireframes                                                                             |    M     |     6 hrs      |      TBD      |     TBD     |
+| Implement media queries for mobile view                                                                   |    M     |     4 hrs      |      TBD      |     TBD     |
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| TOTAL | | 51 hrs | TBD| TBD |
 
 <br>
 
@@ -108,15 +98,16 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[ERD](https://drive.google.com/file/d/1YjpqDdykFT7KNYHOUGVNmwwQF6oshQSJ/view?usp=sharing)
 <br>
 
 ---
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- _Create a landing page with additional branding and carousal_
+- _Additional user association where users can save their favorite cars_
+- _Implement User Restriction so that only verified admins can access crud functionality for cars and other users can only access crud functionality on appoinments_
+- _Research websockets to implement chatbox to answer user inquiries in real time_
 
 ---
