@@ -1,22 +1,23 @@
 class CarsController < ApplicationController
-  before_action :set_car, only: [:show, :update, :destroy]
-
+  before_action :authorize_request, only: [ :create, :update, :destroy ]
+  before_action :set_car, only: [ :update, :destroy ]
+  
   # GET /cars
   def index
     @cars = Car.all
-
     render json: @cars
   end
 
   # GET /cars/1
   def show
-    render json: @car
+    @car = Car.find(params[:id])
+    render json: @car, include: [:user, :models]
   end
 
-  # POST /cars
+  # POST /foods
   def create
     @car = Car.new(car_params)
-
+    @car.user = @current_user
     if @car.save
       render json: @car, status: :created, location: @car
     else
@@ -24,7 +25,7 @@ class CarsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /cars/1
+  # PATCH/PUT /foods/1
   def update
     if @car.update(car_params)
       render json: @car
@@ -33,7 +34,7 @@ class CarsController < ApplicationController
     end
   end
 
-  # DELETE /cars/1
+  # DELETE /foods/1
   def destroy
     @car.destroy
   end
@@ -41,11 +42,12 @@ class CarsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_car
-      @car = Car.find(params[:id])
+      @car = @current_user.cars.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def car_params
-      params.require(:car).permit(:user_id, :img_url, :make, :model_id, :color, :year, :mileage, :price, :body, :description)
+      params.require(:car).permit(:make)
     end
+
 end

@@ -84,12 +84,11 @@ src
 | Task                                                                                                      | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Initial Setup (Setting up models and migration files/Cors)                                                |    H     |     3 hrs      |     2 hrs     |     TBD     |
-| Create CRUD Actions in controller files for Cars                                                          |    H     |     2 hrs      |      TBD      |     TBD     |
-| Create CRUD Actions in controller files for Models                                                        |    H     |      1 hr      |      TBD      |     TBD     |
-| Create CRUD Actions in controller files for Makes                                                         |    H     |      1 hr      |      TBD      |     TBD     |
-| Create CRUD Actions in controller files for Users                                                         |    H     |    2.5 hrs     |      TBD      |     TBD     |
-| Set up Authentication controller                                                                          |    H     |    2.5 hrs     |      TBD      |     TBD     |
-| Create CRUD Actions in controller files for Appointments                                                  |    H     |     2 hrs      |      TBD      |     TBD     |
+| Create CRUD Actions in controller files for Cars                                                          |    H     |     2 hrs      |     1 hr      |     TBD     |
+| Create CRUD Actions in controller files for Models                                                        |    H     |      1 hr      |    0.5 hrs    |     TBD     |
+| Create CRUD Actions in controller files for Makes                                                         |    H     |      1 hr      |    0.5 hrs    |     TBD     |
+| Create CRUD Actions in controller files for Users                                                         |    H     |    2.5 hrs     |    0.5 hrs    |     TBD     |
+| Set up Authentication controller                                                                          |    H     |      1 hr      |      TBD      |     TBD     |
 | Setup React Components                                                                                    |    H     |     2 hrs      |      TBD      |     TBD     |
 | Connect and test backend/frontend relationship in services                                                |    H     |     3 hrs      |      TBD      |     TBD     |
 | Build out frontend CRUD in main container for cars                                                        |    H     |     3 hrs      |      TBD      |     TBD     |
