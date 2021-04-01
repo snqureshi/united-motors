@@ -11,7 +11,7 @@ class CarsController < ApplicationController
   # GET /cars/1
   def show
     @car = Car.find(params[:id])
-    render json: @car, include: [:user, :models]
+    render json: @car, include: :model
   end
 
   # POST /foods
@@ -47,7 +47,7 @@ class CarsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def car_params
-      params.require(:car).permit(:make)
+      params.require(:car).permit(:make, :img_url, :model, :color, :description, :year, :price, :mileage, :body)
     end
 
 end
