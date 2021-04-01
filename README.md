@@ -83,7 +83,7 @@ src
 
 | Task                                                                                                      | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Initial Setup (Setting up models and migration files/Cors)                                                |    H     |     3 hrs      |      TBD      |     TBD     |
+| Initial Setup (Setting up models and migration files/Cors)                                                |    H     |     3 hrs      |     2 hrs     |     TBD     |
 | Create CRUD Actions in controller files for Cars                                                          |    H     |     2 hrs      |      TBD      |     TBD     |
 | Create CRUD Actions in controller files for Models                                                        |    H     |      1 hr      |      TBD      |     TBD     |
 | Create CRUD Actions in controller files for Makes                                                         |    H     |      1 hr      |      TBD      |     TBD     |
