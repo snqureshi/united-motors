@@ -11,7 +11,7 @@ class CarsController < ApplicationController
   # GET /cars/1
   def show
     @car = Car.find(params[:id])
-    render json: @car, include: :model
+    render json: @car, include: :model 
   end
 
   # POST /car

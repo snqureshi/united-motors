@@ -1,4 +1,5 @@
 // package imports
+import api from "./services/api-config";
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 
@@ -30,6 +31,15 @@ function App() {
     };
     handleVerify();
   }, []);
+
+  // To reset the token when refresh
+  function SetAuthToken() {
+    const token = localStorage.getItem("authToken");
+    if (token) {
+      api.defaults.headers.common.authorization = `Bearer ${token}`;
+    }
+  }
+  SetAuthToken();
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);

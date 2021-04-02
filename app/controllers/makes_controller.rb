@@ -10,7 +10,7 @@ class MakesController < ApplicationController
   # GET /makes/1
   def show
     @make = Make.find(params[:id])
-    render json: @make
+    render json: @make, include: :cars
   end
 
 
