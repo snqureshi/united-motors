@@ -1,14 +1,15 @@
 import { useState } from "react";
+import AllModels from "../AllModels/AllModels";
 
 export default function CreateCar(props) {
   const [formData, setFormData] = useState({
     img_url: "",
     make: "",
-    model_id: Number,
+    model_id: "",
     color: "",
-    year: Number,
-    mileage: Number,
-    price: Number,
+    year: "",
+    mileage: "",
+    price: "",
     body: "",
     description: "",
   });
@@ -23,7 +24,7 @@ export default function CreateCar(props) {
     body,
     description,
   } = formData;
-  const { handleCreate } = props;
+  const { handleCreate, models, makes } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,7 +53,13 @@ export default function CreateCar(props) {
       </label>
       <label>
         Make:
-        <input type="text" name="make" value={make} onChange={handleChange} />
+        <select required name="make" onChange={handleChange}>
+          {makes.map((make, index) => (
+            <option key={index} value={make.name} name="make">
+              {make.name}
+            </option>
+          ))}
+        </select>
       </label>
       <label>
         Color:
@@ -60,21 +67,22 @@ export default function CreateCar(props) {
       </label>
       <label>
         Model:
-        <input
-          type="Number"
-          name="model"
-          value={model_id}
-          onChange={handleChange}
-        />
+        <select required name="model_id" onChange={handleChange}>
+          {models.map((model, index) => (
+            <option key={index} value={model.id} name="model_id">
+              {model.name}
+            </option>
+          ))}
+        </select>
       </label>
       <label>
         Year:
-        <input type="Number" name="year" value={year} onChange={handleChange} />
+        <input type="number" name="year" value={year} onChange={handleChange} />
       </label>
       <label>
         Price:
         <input
-          type="Number"
+          type="number"
           name="price"
           value={price}
           onChange={handleChange}
@@ -83,7 +91,7 @@ export default function CreateCar(props) {
       <label>
         Mileage
         <input
-          type="Number"
+          type="number"
           name="mileage"
           value={mileage}
           onChange={handleChange}
@@ -91,13 +99,13 @@ export default function CreateCar(props) {
       </label>
       <label>
         Body type:
-        <input type="text" name="Body" value={body} onChange={handleChange} />
+        <input type="text" name="body" value={body} onChange={handleChange} />
       </label>
       <label>
         Details:
         <input
           type="text"
-          name="details"
+          name="description"
           value={description}
           onChange={handleChange}
         />

@@ -21,6 +21,7 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         <>
+          <Link to="/cars/new">Create New Car</Link>
           <Link to="/cars">Cars</Link>
           <Link to="/models">Models</Link>
           <Link to="/makes">Makes</Link>

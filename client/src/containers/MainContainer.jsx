@@ -72,7 +72,7 @@ export default function MainContainer(props) {
         <AllMakes makes={makes} />
       </Route>
       <Route path="/cars/new">
-        <CreateCar handleCreate={handleCreate} />
+        <CreateCar handleCreate={handleCreate} makes={makes} models={models} />
       </Route>
       <Route path="/cars/:id/edit">
         <UpdateCar cars={cars} handleUpdate={handleUpdate} />

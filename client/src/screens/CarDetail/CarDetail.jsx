@@ -3,10 +3,9 @@ import { useParams } from "react-router-dom";
 import { getOneCar } from "../../services/cars";
 
 export default function CarDetail(props) {
-  const [currentCar, setCurrentCar] = useState(null);
-  // const [selectedModel, setSelectedModel] = useState("");
+  const [currentCar, setCurrentCar] = useState([]);
   const { id } = useParams();
-  // const { model } = props;
+  const { cars } = props;
 
   useEffect(() => {
     const fetchOneCar = async () => {
@@ -16,38 +15,16 @@ export default function CarDetail(props) {
     fetchOneCar();
   }, []);
 
-  // const handleChange = (e) => {
-  //   const { value } = e.target;
-  //   setSelectedModel(value);
-  // };
-
-  // const handleSubmit = async () => {
-  //   const carData = await add(id, selectedModel);
-  //   setCurrentCar(carData);
-  // };
+  console.log(currentCar);
 
   return (
     <div>
-      <h3>{currentCar?.make}</h3>
-      {currentCar?.models.map((model) => (
-        <p key={model.id}>{model.name}</p>
-      ))}
-      {/* <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          handleSubmit();
-        }}
-      >
-        <select onChange={handleChange} defaultValue="default">
-          <option value="default" disabled>
-            -- Select a model --
-          </option>
-          {models.map((model) => (
-            <option value={model.id}>{model.name}</option>
-          ))}
-        </select>
-        <button>add</button>
-      </form> */}
+      <h3>Car Details</h3>
+      <img
+        className="all-car-image"
+        src={currentCar.img_url}
+        alt={currentCar.make}
+      />
     </div>
   );
 }
