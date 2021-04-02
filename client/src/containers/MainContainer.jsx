@@ -75,17 +75,22 @@ export default function MainContainer(props) {
         <CreateCar handleCreate={handleCreate} makes={makes} models={models} />
       </Route>
       <Route path="/cars/:id/edit">
-        <UpdateCar cars={cars} handleUpdate={handleUpdate} />
+        <UpdateCar
+          cars={cars}
+          handleUpdate={handleUpdate}
+          makes={makes}
+          models={models}
+        />
       </Route>
       <Route path="/cars/:id">
-        <CarDetail cars={cars} />
-      </Route>
-      <Route path="/cars">
-        <AllCars
+        <CarDetail
           cars={cars}
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
+      </Route>
+      <Route path="/cars">
+        <AllCars cars={cars} />
       </Route>
     </Switch>
   );

@@ -5,11 +5,11 @@ export default function UpdateCar(props) {
   const [formData, setFormData] = useState({
     img_url: "",
     make: "",
-    model_id: Number,
+    model_id: "",
     color: "",
-    year: Number,
-    mileage: Number,
-    price: Number,
+    year: "",
+    mileage: "",
+    price: "",
     body: "",
     description: "",
   });
@@ -25,7 +25,7 @@ export default function UpdateCar(props) {
     description,
   } = formData;
   const { id } = useParams();
-  const { cars, handleUpdate } = props;
+  const { cars, handleUpdate, makes, models } = props;
 
   useEffect(() => {
     const prefillFormData = () => {
@@ -74,7 +74,13 @@ export default function UpdateCar(props) {
       </label>
       <label>
         Make:
-        <input type="text" name="make" value={make} onChange={handleChange} />
+        <select required name="make" onChange={handleChange}>
+          {makes.map((make, index) => (
+            <option key={index} value={make.name} name="make">
+              {make.name}
+            </option>
+          ))}
+        </select>
       </label>
       <label>
         Color:
@@ -82,21 +88,22 @@ export default function UpdateCar(props) {
       </label>
       <label>
         Model:
-        <input
-          type="Number"
-          name="model"
-          value={model_id}
-          onChange={handleChange}
-        />
+        <select required name="model_id" onChange={handleChange}>
+          {models.map((model, index) => (
+            <option key={index} value={model.id} name="model_id">
+              {model.name}
+            </option>
+          ))}
+        </select>
       </label>
       <label>
         Year:
-        <input type="Number" name="year" value={year} onChange={handleChange} />
+        <input type="number" name="year" value={year} onChange={handleChange} />
       </label>
       <label>
         Price:
         <input
-          type="Number"
+          type="number"
           name="price"
           value={price}
           onChange={handleChange}
@@ -105,7 +112,7 @@ export default function UpdateCar(props) {
       <label>
         Mileage
         <input
-          type="Number"
+          type="number"
           name="mileage"
           value={mileage}
           onChange={handleChange}
@@ -113,13 +120,13 @@ export default function UpdateCar(props) {
       </label>
       <label>
         Body type:
-        <input type="text" name="Body" value={body} onChange={handleChange} />
+        <input type="text" name="body" value={body} onChange={handleChange} />
       </label>
       <label>
         Details:
         <input
           type="text"
-          name="details"
+          name="description"
           value={description}
           onChange={handleChange}
         />

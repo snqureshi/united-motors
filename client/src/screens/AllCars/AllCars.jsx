@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Modal from "../../components/Modal";
 import "../AllCars/AllCars.css";
 
 export default function AllCars(props) {
-  const [open, handleOpen] = useState(false);
-  const { cars, handleDelete, currentUser } = props;
+  const { cars } = props;
   return (
     <div>
       <h3>All Cars</h3>
