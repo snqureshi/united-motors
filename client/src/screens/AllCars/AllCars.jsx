@@ -8,10 +8,10 @@ export default function AllCars(props) {
   return (
     <div>
       <h3>All Cars</h3>
-      {cars.map((food) => (
+      {cars.map((cars) => (
         <React.Fragment key={cars.id}>
           <Link to={`/cars/${cars.id}`}>
-            <p>{cars.make}</p>
+            <p>{cars.img_url}</p>
           </Link>
           {currentUser?.id === cars.user_id && (
             <>

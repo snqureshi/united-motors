@@ -11,7 +11,7 @@ Model.destroy_all
 Make.destroy_all
 User.destroy_all
 
-@admin = User.create!(username: 'admin', email: 'shammaq@gmail.com', password_digest: '1234567')
+@admin = User.create!(username: 'admin', email: 'shammaq@gmail.com', password: '1234567')
 
 puts "#{User.count} users created"
 

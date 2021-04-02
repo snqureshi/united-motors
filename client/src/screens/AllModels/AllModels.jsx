@@ -5,8 +5,8 @@ export default function AllModels(props) {
   return (
     <div>
       <h3>All Models</h3>
-      {models.map((model) => (
-        <p key={model.id}>{model.name}</p>
+      {models.map((model, index) => (
+        <p key={index}>{model.name}</p>
       ))}
     </div>
   );

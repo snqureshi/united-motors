@@ -69,7 +69,7 @@ export default function MainContainer(props) {
         <AllModels models={models} />
       </Route>
       <Route path="/makes">
-        <AllMakes models={makes} />
+        <AllMakes makes={makes} />
       </Route>
       <Route path="/cars/new">
         <CreateCar handleCreate={handleCreate} />
