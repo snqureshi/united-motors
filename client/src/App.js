@@ -6,8 +6,8 @@ import { Switch, Route, useHistory } from "react-router-dom";
 // import styling
 import "./App.css";
 
-//import main container
-import MainContainer from "./containers/MainContainer";
+// //import main container
+// import MainContainer from "./containers/MainContainer";
 
 // component imports
 import Layout from "./Layout/Layout";
@@ -71,9 +71,9 @@ function App() {
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path="/">
+          {/* <Route path="/">
             <MainContainer currentUser={currentUser} />
-          </Route>
+          </Route> */}
         </Switch>
       </Layout>
     </div>
