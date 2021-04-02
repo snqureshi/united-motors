@@ -10,7 +10,7 @@ class ModelsController < ApplicationController
   # GET /models/1
   def show
     @model = Model.find(params[:id])
-    render json: @model, include: :make
+    render json: @model, include: :make, :cars
   end
 
   private

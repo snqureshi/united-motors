@@ -14,7 +14,7 @@ class CarsController < ApplicationController
     render json: @car, include: :model
   end
 
-  # POST /foods
+  # POST /car
   def create
     @car = Car.new(car_params)
     @car.user = @current_user
@@ -25,7 +25,7 @@ class CarsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /foods/1
+  # PATCH/PUT /cars/1
   def update
     if @car.update(car_params)
       render json: @car
@@ -34,7 +34,7 @@ class CarsController < ApplicationController
     end
   end
 
-  # DELETE /foods/1
+  # DELETE /cars/1
   def destroy
     @car.destroy
   end
@@ -47,7 +47,7 @@ class CarsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def car_params
-      params.require(:car).permit(:make, :img_url, :model, :color, :description, :year, :price, :mileage, :body)
+      params.require(:car).permit(:make, :img_url, :model_id, :color, :description, :year, :price, :mileage, :body)
     end
 
 end
