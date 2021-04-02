@@ -60,7 +60,7 @@ export default function MainContainer(props) {
 
   const handleDelete = async (id) => {
     await destroyCar(id);
-    setcars((prevState) => prevState.filter((car) => car.id !== id));
+    setCars((prevState) => prevState.filter((car) => car.id !== id));
   };
 
   return (

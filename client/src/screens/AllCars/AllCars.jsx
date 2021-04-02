@@ -9,16 +9,16 @@ export default function AllCars(props) {
     <div>
       <h3>All Cars</h3>
       {cars.map((food) => (
-        <React.Fragment key={car.id}>
-          <Link to={`/cars/${car.id}`}>
-            <p>{car.make}</p>
+        <React.Fragment key={cars.id}>
+          <Link to={`/cars/${cars.id}`}>
+            <p>{cars.make}</p>
           </Link>
-          {currentUser?.id === car.user_id && (
+          {currentUser?.id === cars.user_id && (
             <>
-              <Link to={`/cars/${car.id}/edit`}>
+              <Link to={`/cars/${cars.id}/edit`}>
                 <button>Edit</button>
               </Link>
-              <button onClick={() => handleOpen(car.id)}>delete</button>
+              <button onClick={() => handleOpen(cars.id)}>delete</button>
             </>
           )}
         </React.Fragment>
