@@ -84,16 +84,18 @@ src
 | Task                                                                                                      | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Initial Setup (Setting up models and migration files/Cors)                                                |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Create Seed Data                                                                                          |    H     |     2 hrs      |     2 hrs     |     TBD     |
 | Create CRUD Actions in controller files for Cars                                                          |    H     |     2 hrs      |     1 hr      |     TBD     |
 | Create CRUD Actions in controller files for Models                                                        |    H     |      1 hr      |    0.5 hrs    |     TBD     |
 | Create CRUD Actions in controller files for Makes                                                         |    H     |      1 hr      |    0.5 hrs    |     TBD     |
 | Create CRUD Actions in controller files for Users                                                         |    H     |    2.5 hrs     |    0.5 hrs    |     TBD     |
-| Set up Authentication controller                                                                          |    H     |      1 hr      |      TBD      |     TBD     |
-| Setup React Components                                                                                    |    H     |     2 hrs      |      TBD      |     TBD     |
+| Set up Authentication controller                                                                          |    H     |      1 hr      |      1hr      |     TBD     |
+| Test backend routes with Postman                                                                          |    H     |      1 hr      |     3 hrs     |    3 hrs    |
+| Setup React Components                                                                                    |    H     |     2 hrs      |     2 hrs     |     TBD     |
 | Connect and test backend/frontend relationship in services                                                |    H     |     3 hrs      |      TBD      |     TBD     |
 | Build out frontend CRUD in main container for cars                                                        |    H     |     3 hrs      |      TBD      |     TBD     |
 | Build out frontend CRUD in appointment container for appointments                                         |    H     |     3 hrs      |      TBD      |     TBD     |
-| Build out sign up and sign in screens                                                                     |    H     |     2 hrs      |      TBD      |     TBD     |
+| Build out sign up and sign in screens                                                                     |    H     |     2 hrs      |     2 hrs     |     TBD     |
 | Build out and test all cars screen                                                                        |    H     |     2 hrs      |      TBD      |     TBD     |
 | Build out and test car details screen                                                                     |    H     |     2 hrs      |      TBD      |     TBD     |
 | Build out and test update car screen                                                                      |    H     |     2 hrs      |      TBD      |     TBD     |
