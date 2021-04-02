@@ -37,13 +37,13 @@ export default function CarDetail(props) {
       </div>
       <div className="details-price">{currentCar.price}</div>
       {
-        <React.Fragment>
-          {currentUser?.id === cars.user_id && (
+        <div className="button-container">
+          {currentUser?.id === currentCar.user_id && (
             <>
-              <Link to={`/cars/${cars.id}/edit`}>
+              <Link to={`/cars/${currentCar.id}/edit`}>
                 <button>Edit</button>
               </Link>
-              <button onClick={() => handleOpen(cars.id)}>delete</button>
+              <button onClick={() => handleOpen(currentCar.id)}>Delete</button>
             </>
           )}
           {open && (
@@ -53,7 +53,7 @@ export default function CarDetail(props) {
               handleDelete={handleDelete}
             />
           )}
-        </React.Fragment>
+        </div>
       }
     </div>
   );
