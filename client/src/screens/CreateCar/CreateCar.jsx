@@ -1,5 +1,4 @@
 import { useState } from "react";
-import AllModels from "../AllModels/AllModels";
 
 export default function CreateCar(props) {
   const [formData, setFormData] = useState({
