@@ -1,13 +1,12 @@
 // package imports
-import api from "./services/api-config";
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 
 // import styling
 import "./App.css";
 
-// //import main container
-// import MainContainer from "./containers/MainContainer";
+//import main container and its componenets
+import MainContainer from "./containers/MainContainer";
 import Contact from "./screens/Contact/Contact";
 
 // component imports
@@ -15,7 +14,8 @@ import Layout from "./Layout/Layout";
 import Login from "./screens/Login/Login";
 import Register from "./screens/Register/Register";
 
-// function imports
+// function imports for user
+import api from "./services/api-config";
 import {
   loginUser,
   registerUser,
@@ -72,9 +72,9 @@ function App() {
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          {/* <Route path="/">
+          <Route path="/">
             <MainContainer currentUser={currentUser} />
-          </Route> */}
+          </Route>
           <Route path="/contact">
             <Contact />
           </Route>

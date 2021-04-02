@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-import Modal from "../components/Modal";
+import Modal from "../../components/Modal";
 
 export default function AllCars(props) {
   const [open, handleOpen] = useState(false);
