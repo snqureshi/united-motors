@@ -5,12 +5,14 @@ import { Switch, Route, useHistory } from "react-router-dom";
 
 // import styling
 import "./App.css";
-// import MainContainer from './containers/MainContainer';
+
+//import main container
+import MainContainer from "./containers/MainContainer";
 
 // component imports
 // import Layout from "./layouts/Layout";
-// import Login from "./screens/Login";
-// import Register from "./screens/Register";
+import Login from "./screens/Login";
+import Register from "./screens/Register";
 
 // function imports
 import {
