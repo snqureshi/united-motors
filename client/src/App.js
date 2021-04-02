@@ -8,6 +8,7 @@ import "./App.css";
 
 // //import main container
 // import MainContainer from "./containers/MainContainer";
+import Contact from "./screens/Contact/Contact";
 
 // component imports
 import Layout from "./Layout/Layout";
@@ -74,6 +75,9 @@ function App() {
           {/* <Route path="/">
             <MainContainer currentUser={currentUser} />
           </Route> */}
+          <Route path="/contact">
+            <Contact />
+          </Route>
         </Switch>
       </Layout>
     </div>
