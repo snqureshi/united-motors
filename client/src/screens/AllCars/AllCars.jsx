@@ -13,35 +13,21 @@ export default function AllCars(props) {
         {cars.map((cars) => (
           <React.Fragment key={cars.id}>
             <Link to={`/cars/${cars.id}`}>
-              <img
-                className="all-car-image"
-                src={cars.img_url}
-                alt={cars.make}
-              />
-              <div className="all-year">{cars.year}</div>
-              <div className="all-make">{cars.make}</div>
-              <div className="all-model">{cars.model}</div>
-              <div className="all-price">${cars.price}</div>
+              <div className="each-car">
+                <img
+                  className="all-car-image"
+                  src={cars.img_url}
+                  alt={cars.make}
+                />
+                <div className="all-year">{cars.year}</div>
+                <div className="all-make">{cars.make}</div>
+                <div className="all-model">{cars.model}</div>
+                <div className="all-price">${cars.price}</div>
+              </div>
             </Link>
-            {currentUser?.id === cars.user_id && (
-              <>
-                <Link to={`/cars/${cars.id}/edit`}>
-                  <button>Edit</button>
-                </Link>
-                <button onClick={() => handleOpen(cars.id)}>delete</button>
-              </>
-            )}
           </React.Fragment>
         ))}
       </div>
-      <br />
-      {open && (
-        <Modal
-          open={open}
-          handleOpen={handleOpen}
-          handleDelete={handleDelete}
-        />
-      )}
     </div>
   );
 }
