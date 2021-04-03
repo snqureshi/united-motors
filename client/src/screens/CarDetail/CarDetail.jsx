@@ -8,7 +8,7 @@ export default function CarDetail(props) {
   const [currentCar, setCurrentCar] = useState([]);
   const { id } = useParams();
   const [open, handleOpen] = useState(false);
-  const { cars, handleDelete, currentUser } = props;
+  const { handleDelete, currentUser } = props;
 
   useEffect(() => {
     const fetchOneCar = async () => {

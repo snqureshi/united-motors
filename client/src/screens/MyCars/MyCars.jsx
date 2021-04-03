@@ -14,27 +14,25 @@ export default function MyCars() {
     fetchMyCars();
   }, []);
 
-  console.log(myCars);
-
   return (
     <div>
       <h3>My Cars</h3>
       <div className="my-car-container">
         {myCars.map((myCar) => (
-          <React.Fragment key={MyCars.id}>
-            {/* <Link to={`/user_cars/${id}`}> */}
-            <div className="each-car">
-              <img
-                className="my-car-image"
-                src={myCars.img_url}
-                alt={myCars.make}
-              />
-              <div className="all-year">{myCars.year}</div>
-              <div className="all-make">{myCars.make}</div>
-              <div className="all-model">{myCars.model}</div>
-              <div className="all-price">${myCars.price}</div>
-            </div>
-            {/* </Link> */}
+          <React.Fragment key={myCar.id}>
+            <Link to={`/cars/${myCar.id}`}>
+              <div className="my-each-car">
+                <img
+                  className="my-car-image"
+                  src={myCar.img_url}
+                  alt={myCar.make}
+                />
+                <div className="my-year">{myCar.year}</div>
+                <div className="my-make">{myCar.make}</div>
+                <div className="my-model">{myCar.model}</div>
+                <div className="my-price">${myCar.price}</div>
+              </div>
+            </Link>
           </React.Fragment>
         ))}
       </div>

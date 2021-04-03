@@ -61,10 +61,6 @@ export default function CreateCar(props) {
         </select>
       </label>
       <label>
-        Color:
-        <input type="text" name="color" value={color} onChange={handleChange} />
-      </label>
-      <label>
         Model:
         <select required name="model_id" onChange={handleChange}>
           {models.map((model, index) => (
@@ -73,6 +69,10 @@ export default function CreateCar(props) {
             </option>
           ))}
         </select>
+      </label>
+      <label>
+        Color:
+        <input type="text" name="color" value={color} onChange={handleChange} />
       </label>
       <label>
         Year:

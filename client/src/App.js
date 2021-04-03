@@ -73,14 +73,14 @@ function App() {
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path="/">
-            <MainContainer currentUser={currentUser} />
-          </Route>
           <Route path="/user_cars">
             <MyCars currentUser={currentUser} />
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/">
+            <MainContainer currentUser={currentUser} />
           </Route>
         </Switch>
       </Layout>

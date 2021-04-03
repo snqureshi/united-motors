@@ -6,8 +6,8 @@ export default function Layout(props) {
   return (
     <div>
       <header>
-        <Link to="/">
-          <h1>United Motors</h1>
+        <Link to="/cars">
+          <h1>United Motors Dealership</h1>
         </Link>
         {currentUser ? (
           <>
