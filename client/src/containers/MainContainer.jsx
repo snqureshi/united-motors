@@ -61,6 +61,7 @@ export default function MainContainer(props) {
   const handleDelete = async (id) => {
     await destroyCar(id);
     setCars((prevState) => prevState.filter((car) => car.id !== id));
+    history.push(`/cars`);
   };
 
   return (
