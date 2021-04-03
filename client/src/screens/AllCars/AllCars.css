@@ -1,9 +1,72 @@
+.all-page {
+  background-color: #ee6c4d;
+}
+
+.all-heading {
+  color: white;
+  font-size: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0 20px 0;
+  background-color: #030f176d;
+  border-radius: 20px;
+}
+
 .all-car-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
+
+.each-car {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "I"
+    "D"
+    "B";
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  background-color: #030f17;
+  opacity: 0.9;
+}
+.each-car:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 20px 10px 20px;
+  opacity: 1;
+}
+
 .all-car-image {
+  grid-area: I;
   width: 300px;
   height: 300px;
   object-fit: contain;
+}
+
+.all-details {
+  grid-area: D;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.all-button {
+  grid-area: B;
+  width: 100px;
+  border-radius: 20px;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .each-car {
+    width: 280px;
+  }
+  .all-car-image {
+    width: 245px;
+  }
 }

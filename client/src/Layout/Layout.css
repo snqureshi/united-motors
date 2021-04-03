@@ -4,5 +4,8 @@
 }
 
 .layout-children {
-  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ee6c4d;
 }
