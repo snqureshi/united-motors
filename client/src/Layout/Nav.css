@@ -1,0 +1,43 @@
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-top {
+  position: sticky;
+  background-color: #000b12;
+}
+
+.navbar-brand {
+  margin-left: 100px;
+}
+.page-logo {
+  color: #ffffff !important;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 40vw;
+  justify-content: space-evenly;
+  margin-right: 15px;
+}
+
+.welcome-msg {
+  font-family: fantasy;
+  color: #ffffff;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff !important;
+  border: none !important;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media only screen and (max-width: 550px) {
+  .logo-pic {
+    height: 40px;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getUserCars } from "../../services/cars";
+import "../MyCars/MyCars.css";
 
 export default function MyCars() {
   const [myCars, setMyCars] = useState([]);

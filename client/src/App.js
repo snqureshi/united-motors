@@ -14,6 +14,7 @@ import MyCars from "./screens/MyCars/MyCars";
 import Layout from "./Layout/Layout";
 import Login from "./screens/Login/Login";
 import Register from "./screens/Register/Register";
+import LogOut from "./screens/LogOut/LogOut";
 
 // function imports for user
 import api from "./services/api-config";
@@ -72,6 +73,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register handleRegister={handleRegister} />
+          </Route>
+          <Route path="/logout">
+            <LogOut handleLogout={handleLogout} />
           </Route>
           <Route path="/user_cars">
             <MyCars currentUser={currentUser} />
