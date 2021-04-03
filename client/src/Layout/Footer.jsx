@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 const Footer = () => (
   <footer>
     <div className="shamma-footer person-footer">

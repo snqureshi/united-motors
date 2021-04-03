@@ -1,0 +1,90 @@
+footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #000b12;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo-footer {
+  height: 60px;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.person-footer {
+  margin: 5px 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.member-name {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.footer-photo-git {
+  height: 20px;
+  width: 20px;
+}
+
+@media only screen and (max-width: 595px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo-footer {
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .person-footer {
+    margin: 5px 20px;
+    width: 150px;
+  }
+
+  .member-name {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .logo-footer {
+    height: 30px;
+  }
+
+  .footer-photo-git {
+    height: 15px;
+    width: 15px;
+  }
+
+  .person-footer {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  footer {
+    padding-top: 3px;
+  }
+
+  .logo-footer {
+    height: 24px;
+  }
+
+  .footer-photo-git {
+    height: 12px;
+    width: 12px;
+  }
+
+  .person-footer {
+    width: 30px;
+  }
+}
