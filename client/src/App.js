@@ -8,6 +8,7 @@ import "./App.css";
 //import main container and its componenets
 import MainContainer from "./containers/MainContainer";
 import Contact from "./screens/Contact/Contact";
+import MyCars from "./screens/MyCars/MyCars";
 
 // component imports
 import Layout from "./Layout/Layout";
@@ -74,6 +75,9 @@ function App() {
           </Route>
           <Route path="/">
             <MainContainer currentUser={currentUser} />
+          </Route>
+          <Route path="/user_cars">
+            <MyCars currentUser={currentUser} />
           </Route>
           <Route path="/contact">
             <Contact />

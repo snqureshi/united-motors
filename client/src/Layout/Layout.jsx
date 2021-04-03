@@ -21,10 +21,12 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         <>
+          <Link to="/cars">Available Cars</Link>
+          <Link to="/models">Shop by Models</Link>
+          <Link to="/makes">Shop by Makes</Link>
           <Link to="/cars/new">Create New Car</Link>
-          <Link to="/cars">Cars</Link>
-          <Link to="/models">Models</Link>
-          <Link to="/makes">Makes</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="/user_cars">My Cars</Link>
           <hr />
         </>
       )}

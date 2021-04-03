@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :makes, only: :index
   resources :models, only: :index
   resources :cars
+  get '/user_cars', to: 'cars#user_cars'
   resources :users, only: :create
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

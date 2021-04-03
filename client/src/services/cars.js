@@ -24,3 +24,8 @@ export const destroyCar = async (id) => {
   const resp = await api.delete(`/cars/${id}`);
   return resp;
 };
+
+export const getUserCars = async () => {
+  const resp = await api.get(`/user_cars`);
+  return resp.data;
+};

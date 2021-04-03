@@ -1,11 +1,11 @@
 class CarsController < ApplicationController
-  before_action :authorize_request, only: [ :create, :update, :destroy ]
+  before_action :authorize_request, only: [ :create, :update, :destroy, :user_cars]
   before_action :set_car, only: [ :update, :destroy ]
   
   # GET /cars
   def index
     @cars = Car.all
-    render json: @cars
+    render json: @cars 
   end
 
   # GET /cars/1
@@ -37,6 +37,10 @@ class CarsController < ApplicationController
   # DELETE /cars/1
   def destroy
     @car.destroy
+  end
+
+  def user_cars
+    render json: @current_user.cars 
   end
 
   private
