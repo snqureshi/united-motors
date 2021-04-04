@@ -10,17 +10,18 @@
 }
 
 .navbar-brand {
-  margin-left: 100px;
+  margin-left: 50px;
 }
-.page-logo {
-  color: #ffffff !important;
+.logo-pic {
+  width: 150px;
+  height: 100px;
 }
 
 .navbar-nav {
   display: flex;
   width: 40vw;
   justify-content: space-evenly;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .welcome-msg {

@@ -1,0 +1,43 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-heading {
+  color: white;
+  font-size: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0 20px 0;
+  background-color: #030f176d;
+  border-radius: 20px;
+}
+
+.details-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px;
+  grid-column-gap: 20px;
+  width: 100vw;
+  max-width: 800px;
+  justify-self: center;
+}
+
+.details-car-image {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 1/5;
+  margin-left: 200px;
+}
+
+.details-container {
+  width: 600px;
+  line-height: 1.6;
+  margin-top: 80px;
+  text-align: left;
+}

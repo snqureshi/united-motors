@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getOneCar } from "../../services/cars";
 import Modal from "../../components/Modal";
+import "./CarDetail.css";
 
 export default function CarDetail(props) {
   const [currentCar, setCurrentCar] = useState([]);
@@ -19,31 +20,38 @@ export default function CarDetail(props) {
   }, []);
 
   return (
-    <div>
-      <h3>Car Details</h3>
-      <img
-        className="all-car-image"
-        src={currentCar.img_url}
-        alt={currentCar.make}
-      />
-      <div className="details-container">
-        <div>{currentCar.make}</div>
-        <div>{currentCar.model && currentCar.model.name}</div>
-        <div>{currentCar.year}</div>
-        <div>{currentCar.mileage}</div>
-        <div>{currentCar.color}</div>
-        <div>{currentCar.type}</div>
-        <div>{currentCar.description}</div>
+    <div className="details-page">
+      <div className="details-heading">Car Details</div>
+      <div className="details-content">
+        <img
+          className="details-car-image"
+          src={currentCar.img_url}
+          alt={currentCar.make}
+        />
+        <div className="details-container">
+          <div>Make: {currentCar.make}</div>
+          <div>Model: {currentCar.model && currentCar.model.name}</div>
+          <div>Year: {currentCar.year}</div>
+          <div>Mileage: {currentCar.mileage}</div>
+          <div>Color: {currentCar.color}</div>
+          <div>Body Type: {currentCar.type}</div>
+          <div>Description: {currentCar.description}</div>
+          <div>Price: ${currentCar.price}</div>
+        </div>
       </div>
-      <div className="details-price">{currentCar.price}</div>
       {
         <div className="button-container">
           {currentUser?.id === currentCar.user_id && (
             <>
               <Link to={`/cars/${currentCar.id}/edit`}>
-                <button>Edit</button>
+                <button className="edit-button">Edit</button>
               </Link>
-              <button onClick={() => handleOpen(currentCar.id)}>Delete</button>
+              <button
+                className="delete-button"
+                onClick={() => handleOpen(currentCar.id)}
+              >
+                Delete
+              </button>
             </>
           )}
           {open && (

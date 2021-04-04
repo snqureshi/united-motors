@@ -30,12 +30,6 @@ const alwaysOptions = (
     <Nav.Link className="nav-tabs" href="/cars">
       Available Cars
     </Nav.Link>
-    <Nav.Link className="nav-tabs" href="/makes">
-      All Makes
-    </Nav.Link>
-    <Nav.Link className="nav-tabs" href="/models">
-      All Models
-    </Nav.Link>
   </>
 );
 
@@ -44,7 +38,11 @@ const MainNav = (props) => {
   return (
     <Navbar className="nav-section sticky-top" expand="lg">
       <Navbar.Brand href="/cars" className="page-logo">
-        <h3>United Motors Cars</h3>
+        <img
+          className="logo-pic"
+          src="https://i.imgur.com/SuEWCRc.png?2"
+          alt="logo"
+        />
       </Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="font-weight-bold">
