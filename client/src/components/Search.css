@@ -1,0 +1,23 @@
+.search-form {
+  margin-top: 5px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #76c8bb;
+  border-radius: 10px;
+  outline: none;
+  background-color: #76c8bb;
+}
+
+.search-input::placeholder {
+  color: #01000b;
+}
