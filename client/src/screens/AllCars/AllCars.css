@@ -10,8 +10,9 @@
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px 0 20px 0;
-  background-color: #030f176d;
+  background-color: #000b13;
   border-radius: 20px;
+  font-family: "Abril Fatface", cursive;
 }
 
 .all-car-container {

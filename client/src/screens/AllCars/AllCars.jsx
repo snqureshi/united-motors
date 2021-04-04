@@ -4,6 +4,7 @@ import "../AllCars/AllCars.css";
 
 export default function AllCars(props) {
   const { cars } = props;
+
   return (
     <div className="all-page">
       <div className="all-heading">Shop Our Inventory</div>
@@ -19,9 +20,8 @@ export default function AllCars(props) {
                 />
                 <div className="all-details">
                   <div className="all-make-model">
-                    {cars.make} {cars.model.name}
+                    {cars.year} {cars.make} {cars.model.name}
                   </div>
-                  <div className="all-year">{cars.year}</div>
                   <div className="all-price">${cars.price}</div>
                 </div>
                 <button className="all-button">Learn More</button>
