@@ -1,0 +1,36 @@
+.sign-up-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1502877338535-766e1452684a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fGNhcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-header {
+  text-align: center;
+  padding: 30px 200px;
+  margin: 50px 50px;
+  font-size: 40px;
+  background-color: #010b2891;
+  font-family: "Abril Fatface";
+  color: white;
+  border-radius: 50px;
+}
+
+.register-form-container {
+  background-color: white;
+  border-radius: 3.5px;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 5px 10px 5px;
+}
