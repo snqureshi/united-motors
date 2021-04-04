@@ -12,9 +12,10 @@
 .navbar-brand {
   margin-left: 50px;
 }
+
 .logo-pic {
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
 }
 
 .navbar-nav {
@@ -25,7 +26,8 @@
 }
 
 .welcome-msg {
-  font-family: fantasy;
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -34,7 +36,13 @@
   justify-content: flex-end;
   color: #ffffff !important;
   border: none !important;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-tabs:hover {
+  color: #ee6d4d !important;
 }
 
 @media only screen and (max-width: 550px) {
