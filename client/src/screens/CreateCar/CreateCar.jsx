@@ -130,41 +130,40 @@ export default function CreateCar(props) {
             className="create-drop"
             type="text"
             name="body"
-            value={body}
             onChange={handleChange}
           >
             <option value={body} name="body">
-              SUV
+              SUV{body}
             </option>
             <option value={body} name="body">
-              Full-Size Sedan
+              Full-Size Sedan{body}
             </option>
             <option value={body} name="body">
-              Mid-Size Sedan
+              Mid-Size Sedan{body}
             </option>
             <option value={body} name="body">
-              Compact Sedan
+              Compact Sedan{body}
             </option>
             <option value={body} name="body">
-              Subcompact Sedan
+              Subcompact Sedan{body}
             </option>
             <option value={body} name="body">
-              Coupe
+              Coupe{body}
             </option>
             <option value={body} name="body">
-              Convertible
+              Convertible{body}
             </option>
             <option value={body} name="body">
-              Station Wagon
+              Station Wagon{body}
             </option>
             <option value={body} name="body">
-              Hatchback
+              Hatchback{body}
             </option>
             <option value={body} name="body">
-              Minivan
+              Minivan{body}
             </option>
             <option value={body} name="body">
-              Pick-Up Truck
+              Pick-Up Truck{body}
             </option>
           </select>
         </label>

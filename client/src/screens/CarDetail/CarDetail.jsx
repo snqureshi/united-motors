@@ -44,10 +44,10 @@ export default function CarDetail(props) {
           {currentUser?.id === currentCar.user_id && (
             <>
               <Link to={`/cars/${currentCar.id}/edit`}>
-                <button className="edit-button">Edit</button>
+                <button className="sign-in-button">Edit</button>
               </Link>
               <button
-                className="delete-button"
+                className="sign-in-button"
                 onClick={() => handleOpen(currentCar.id)}
               >
                 Delete
