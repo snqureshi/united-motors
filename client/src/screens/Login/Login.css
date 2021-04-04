@@ -1,0 +1,79 @@
+.sign-in-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1557081389-74d7a8015850?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8b3JhbmdlJTIwY2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-header {
+  text-align: center;
+  padding: 30px 200px;
+  margin: 50px 50px;
+  font-size: 40px;
+  background-color: #f15d0891;
+  font-family: "Abril Fatface";
+  color: white;
+  border-radius: 50px;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 3.5px;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 5px 10px 5px;
+}
+
+.sign-in-instructions {
+  font-family: "Spartan", sans-serif;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.sign-in-fields {
+  font-family: "Spartan", sans-serif;
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.sign-in-button {
+  font-family: "Spartan", sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #000b13;
+  color: #ffffff;
+  width: 200px;
+}
+
+.sign-in-button:hover {
+  transform: scale(1.2);
+}
+
+.register-link:link,
+.register-link:visited {
+  color: #000b13;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.register-link:hover {
+  transform: scale(1.05);
+}
