@@ -56,82 +56,117 @@ export default function UpdateCar(props) {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleUpdate(id, formData);
-      }}
-    >
-      <h3>Update Car Listing</h3>
-      <label>
-        Image URL:
-        <input
-          type="text"
-          name="img_url"
-          value={img_url}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Make:
-        <select required name="make" onChange={handleChange}>
-          {makes.map((make, index) => (
-            <option key={index} value={make.name} name="make">
-              {make.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <label>
-        Color:
-        <input type="text" name="color" value={color} onChange={handleChange} />
-      </label>
-      <label>
-        Model:
-        <select required name="model_id" onChange={handleChange}>
-          {models.map((model, index) => (
-            <option key={index} value={model.id} name="model_id">
-              {model.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <label>
-        Year:
-        <input type="number" name="year" value={year} onChange={handleChange} />
-      </label>
-      <label>
-        Price:
-        <input
-          type="number"
-          name="price"
-          value={price}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Mileage
-        <input
-          type="number"
-          name="mileage"
-          value={mileage}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Body type:
-        <input type="text" name="body" value={body} onChange={handleChange} />
-      </label>
-      <label>
-        Details:
-        <input
-          type="text"
-          name="description"
-          value={description}
-          onChange={handleChange}
-        />
-      </label>
-      <button>Submit</button>
-    </form>
+    <div className="update-page">
+      <div className="form-heading">Update Your Listing</div>
+      <form
+        className="create-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleUpdate(id, formData);
+        }}
+      >
+        <label>
+          Image URL:
+          <input
+            className="create-input"
+            type="text"
+            name="img_url"
+            value={img_url}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Make:
+          <select
+            className="create-input"
+            required
+            name="make"
+            onChange={handleChange}
+          >
+            {makes.map((make, index) => (
+              <option key={index} value={make.name} name="make">
+                {make.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Color:
+          <input
+            className="create-input"
+            type="text"
+            name="color"
+            value={color}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Model:
+          <select
+            className="create-input"
+            required
+            name="model_id"
+            onChange={handleChange}
+          >
+            {models.map((model, index) => (
+              <option key={index} value={model.id} name="model_id">
+                {model.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Year:
+          <input
+            className="create-input"
+            type="number"
+            name="year"
+            value={year}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Price:
+          <input
+            className="create-input"
+            type="number"
+            name="price"
+            value={price}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Mileage
+          <input
+            className="create-input"
+            type="number"
+            name="mileage"
+            value={mileage}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Body type:
+          <input
+            className="create-input"
+            type="text"
+            name="body"
+            value={body}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Details:
+          <input
+            className="create-input"
+            type="text"
+            name="description"
+            value={description}
+            onChange={handleChange}
+          />
+        </label>
+        <button className="sign-in-button">Submit</button>
+      </form>
+    </div>
   );
 }
