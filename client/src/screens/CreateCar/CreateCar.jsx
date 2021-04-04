@@ -132,14 +132,14 @@ export default function CreateCar(props) {
             name="body"
             onChange={handleChange}
           >
-            <option value={body} name="body">
-              SUV{body}
+            <option value="SUV" name="body">
+              SUV
             </option>
-            <option value={body} name="body">
-              Full-Size Sedan{body}
+            <option value="Full-Size Sedan" name="body">
+              Full-Size Sedan
             </option>
-            <option value={body} name="body">
-              Mid-Size Sedan{body}
+            <option value="Mid-Size Sedan" name="body">
+              Mid-Size Sedan
             </option>
             <option value={body} name="body">
               Compact Sedan{body}

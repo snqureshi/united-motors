@@ -34,7 +34,7 @@ export default function CarDetail(props) {
           <div>Year: {currentCar.year}</div>
           <div>Mileage: {currentCar.mileage}</div>
           <div>Color: {currentCar.color}</div>
-          <div>Body Type: {currentCar.type}</div>
+          <div>Body Type: {currentCar.body}</div>
           <div>Description: {currentCar.description}</div>
           <div>Price: ${currentCar.price}</div>
         </div>

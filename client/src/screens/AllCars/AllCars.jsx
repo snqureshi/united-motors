@@ -19,7 +19,7 @@ export default function AllCars(props) {
                 />
                 <div className="all-details">
                   <div className="all-make-model">
-                    {cars.make} {cars.model}
+                    {cars.make} {cars.model.name}
                   </div>
                   <div className="all-year">{cars.year}</div>
                   <div className="all-price">${cars.price}</div>

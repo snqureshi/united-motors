@@ -5,7 +5,7 @@ class CarsController < ApplicationController
   # GET /cars
   def index
     @cars = Car.all
-    render json: @cars 
+    render json: @cars , include: :model 
   end
 
   # GET /cars/1
