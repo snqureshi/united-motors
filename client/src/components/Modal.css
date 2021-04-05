@@ -1,0 +1,41 @@
+.modal-container {
+  background-color: #030f1760;
+  font-family: "Spartan", sans-serif;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  max-width: 50vw;
+  max-height: 25vh;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  color: #030f17;
+  margin-top: 400px;
+  padding-top: 50px;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-button {
+  background-color: rgb(118, 235, 235);
+  font-family: "Spartan", sans-serif;
+  padding: 10px 50px;
+  font-size: 18px;
+  border-radius: 20px;
+  outline: none;
+}

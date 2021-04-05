@@ -6,6 +6,6 @@
 .layout-children {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
   background-color: #ee6c4d;
 }
