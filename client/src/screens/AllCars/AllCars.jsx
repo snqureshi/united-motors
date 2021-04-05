@@ -2,27 +2,30 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../AllCars/AllCars.css";
-import Search from "../../components/Search";
 
 export default function AllCars(props) {
-  const [queriedCars, setQueriedCars] = useState([]);
+  const [search, setSearch] = useState("");
   const { cars } = props;
 
-  const handleSearch = (e) => {
-    const filteredCars = cars.filter((car) =>
-      car.make.toLowerCase().includes(e.target.value.toLowerCase())
-    );
-    setQueriedCars(filteredCars);
-  };
-
-  const handleSubmit = (event) => event.preventDefault();
+  const filteredCars = cars.filter(
+    (car) =>
+      car.make.toLowerCase().includes(search.toLowerCase()) ||
+      car.model.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="all-page">
       <div className="all-heading">Shop Our Inventory</div>
-      <Search onSubmit={handleSubmit} onChange={handleSearch} />
+      <input
+        className="search-input"
+        type="text"
+        placeholder="Search by Make or Model"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
       <div className="all-car-container">
-        {cars.map((cars) => (
+        {filteredCars.map((cars) => (
           <React.Fragment key={cars.id}>
             <Link to={`/cars/${cars.id}`} className="all-link">
               <div className="each-car">

@@ -17,7 +17,7 @@ export default function MyCars() {
 
   return (
     <div className="my-page">
-      <div className="my-heading">My Cars</div>
+      <div className="form-heading">My Cars</div>
       <div className="all-car-container">
         {myCars.map((myCar) => (
           <React.Fragment key={myCar.id}>

@@ -45,8 +45,13 @@
   color: #ee6d4d !important;
 }
 
+.toggle {
+  background-color: white !important;
+}
+
 @media only screen and (max-width: 550px) {
   .logo-pic {
+    width: 80px;
     height: 40px;
   }
 }
