@@ -1,7 +1,7 @@
 .sign-in-container {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://images.unsplash.com/photo-1557081389-74d7a8015850?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8b3JhbmdlJTIwY2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-image: url(https://images.unsplash.com/photo-1617082830121-032747a2cfc2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTh8fHNwb3J0cyUyMGNhcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -14,7 +14,7 @@
   padding: 30px 200px;
   margin: 50px 50px;
   font-size: 40px;
-  background-color: #f15d0891;
+  background-color: #01010f9e;
   font-family: "Abril Fatface";
   color: white;
   border-radius: 50px;
@@ -28,7 +28,7 @@
   padding-top: 50px;
   padding-bottom: 30px;
   width: 600px;
-  height: 300px;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
@@ -76,4 +76,28 @@
 
 .register-link:hover {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1025px) {
+  .sign-in-header {
+    font-size: 30px;
+    margin: 20px 100px;
+  }
+
+  .form-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sign-in-header {
+    font-size: 25px;
+    padding: 30px 100px;
+  }
+
+  .form-container {
+    width: 300px;
+  }
 }
