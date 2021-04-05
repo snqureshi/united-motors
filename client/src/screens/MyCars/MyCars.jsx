@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getUserCars } from "../../services/cars";
-import "../MyCars/MyCars.css";
 
 export default function MyCars() {
   const [myCars, setMyCars] = useState([]);
@@ -17,7 +16,7 @@ export default function MyCars() {
 
   return (
     <div className="my-page">
-      <div className="form-heading">My Cars</div>
+      <div className="all-heading">My Cars</div>
       <div className="all-car-container">
         {myCars.map((myCar) => (
           <React.Fragment key={myCar.id}>

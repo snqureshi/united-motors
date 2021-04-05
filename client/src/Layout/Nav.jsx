@@ -6,7 +6,7 @@ import "./Nav.css";
 const authenticatedOptions = (
   <>
     <Nav.Link as={NavLink} to="/user_cars" className="nav-tabs">
-      My Cars
+      Your Cars
     </Nav.Link>
     <Nav.Link as={NavLink} to="/cars/new" className="nav-tabs">
       Add A Car
