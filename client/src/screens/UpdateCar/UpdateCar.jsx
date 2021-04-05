@@ -57,7 +57,7 @@ export default function UpdateCar(props) {
 
   return (
     <div className="update-page">
-      <div className="form-heading">Update Your Listing</div>
+      <div className="all-heading">Update Your Listing</div>
       <form
         className="create-form"
         onSubmit={(e) => {

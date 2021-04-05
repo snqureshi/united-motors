@@ -42,29 +42,6 @@ div.details-container {
   align-items: center;
 }
 
-@media only screen and (max-width: 400px) {
-  .details-content {
-    display: grid;
-    grid-template-areas:
-      "I"
-      "D";
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-  }
-
-  img.details-car-image {
-    width: 250px;
-    height: 200px;
-  }
-
-  div.details-container {
-    width: 250px;
-    height: 200px;
-    margin-top: 30px;
-  }
-}
-
 @media only screen and (max-width: 1025px) {
   .details-content {
     display: grid;
@@ -87,5 +64,41 @@ div.details-container {
     margin-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .button-container {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .details-content {
+    display: grid;
+    grid-template-areas:
+      "I"
+      "D";
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  img.details-car-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  div.details-container {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .button-container {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
