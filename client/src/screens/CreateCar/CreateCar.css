@@ -1,26 +1,14 @@
-.form-heading {
-  text-align: center;
-  padding: 30px 200px;
-  margin: 50px 200px;
-  font-size: 40px;
-  background-color: #000b13;
-  font-family: "Abril Fatface";
-  color: white;
-  border-radius: 50px;
-  text-decoration: underline;
-}
-
 .create-form {
   background-color: #76c8bb;
   border-radius: 3.5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 30px;
   width: 600px;
-  height: 500px;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -39,4 +27,24 @@
 
 .create-text {
   height: 80px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .create-form {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 400px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .create-form {
+    width: 300px;
+  }
 }

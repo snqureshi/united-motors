@@ -36,7 +36,7 @@ export default function CreateCar(props) {
 
   return (
     <div className="create-page">
-      <div className="form-heading">Add to Your Inventory</div>
+      <div className="all-heading">Add to Your Inventory</div>
       <form
         className="create-form"
         onSubmit={(e) => {
