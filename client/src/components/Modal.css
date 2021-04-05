@@ -39,3 +39,19 @@
   border-radius: 20px;
   outline: none;
 }
+
+@media only screen and (max-width: 1025px) {
+  .modal {
+    margin-top: 400px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .modal-button {
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    outline: none;
+  }
+}

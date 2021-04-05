@@ -48,7 +48,7 @@ const MainNav = (props) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="font-weight-bold">
           {currentUser && (
-            <div className="welcome-msg">Welcome,{currentUser.username}</div>
+            <div className="welcome-msg">Welcome {currentUser.username}</div>
           )}
           {alwaysOptions}
           {currentUser ? authenticatedOptions : unauthenticatedOptions}

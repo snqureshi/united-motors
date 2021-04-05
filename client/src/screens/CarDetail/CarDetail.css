@@ -11,14 +11,14 @@
   align-items: center;
 }
 
-.details-car-image {
+img.details-car-image {
   width: 600px;
   height: 300px;
   object-fit: cover;
   grid-area: I;
 }
 
-.details-container {
+div.details-container {
   grid-area: D;
   width: 600px;
   height: 300px;
@@ -53,12 +53,12 @@
     width: 100vw;
   }
 
-  .details-car-image {
+  img.details-car-image {
     width: 250px;
     height: 200px;
   }
 
-  .details-container {
+  div.details-container {
     width: 250px;
     height: 200px;
     margin-top: 30px;
@@ -76,12 +76,12 @@
     width: 100vw;
   }
 
-  .details-car-image {
+  img.details-car-image {
     width: 400px;
     height: 300px;
   }
 
-  .details-container {
+  div.details-container {
     width: 400px;
     height: 300px;
     margin-top: 30px;
