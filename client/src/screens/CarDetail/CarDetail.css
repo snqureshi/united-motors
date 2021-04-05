@@ -4,20 +4,6 @@
   justify-content: center;
 }
 
-.details-heading {
-  color: white;
-  font-size: 40px;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px 0 20px 0;
-  background-color: #227fbe6d;
-  border-radius: 20px;
-  font-family: "Abril Fatface";
-  text-decoration: underline;
-}
-
 .details-content {
   display: grid;
   grid-template-areas: "I D";
@@ -67,4 +53,54 @@
 .modal-button {
   background-color: rgb(118, 235, 235);
   font-family: "Spartan", sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  .details-content {
+    display: grid;
+    grid-template-areas:
+      "I"
+      "D";
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .details-car-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  .details-container {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .details-content {
+    display: grid;
+    grid-template-areas:
+      "I"
+      "D";
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .details-car-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  .details-container {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

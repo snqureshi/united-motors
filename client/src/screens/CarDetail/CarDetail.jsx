@@ -21,7 +21,7 @@ export default function CarDetail(props) {
 
   return (
     <div className="details-page">
-      <div className="form-heading">Car Details</div>
+      <div className="all-heading">Car Details</div>
       <div className="details-content">
         <img
           className="details-car-image"
