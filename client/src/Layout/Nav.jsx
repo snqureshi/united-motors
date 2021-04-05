@@ -44,6 +44,7 @@ const MainNav = (props) => {
           alt="logo"
         />
       </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="font-weight-bold">
           {currentUser && (
