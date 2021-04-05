@@ -45,7 +45,6 @@ export default function MainContainer(props) {
   const handleCreate = async (carData) => {
     const newCar = await postCar(carData);
     setCars((prevState) => [...prevState, newCar]);
-    history.push("/cars");
   };
 
   const handleUpdate = async (id, carData) => {

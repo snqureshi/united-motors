@@ -19,7 +19,7 @@ class CarsController < ApplicationController
     @car = Car.new(car_params)
     @car.user = @current_user
     if @car.save
-      render json: @car, status: :created, location: @car
+      render json: @car, include: :model, status: :created, location: @car
     else
       render json: @car.errors, status: :unprocessable_entity
     end

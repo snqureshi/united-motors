@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./CreateCar.css";
 
 export default function CreateCar(props) {
@@ -25,6 +26,7 @@ export default function CreateCar(props) {
     description,
   } = formData;
   const { handleCreate, models, makes } = props;
+  const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -42,6 +44,7 @@ export default function CreateCar(props) {
         onSubmit={(e) => {
           e.preventDefault();
           handleCreate(formData);
+          history.push("/cars");
         }}
       >
         <label>
@@ -132,6 +135,9 @@ export default function CreateCar(props) {
             name="body"
             onChange={handleChange}
           >
+            <option value="SUV" name="body">
+              Select A Body Type
+            </option>
             <option value="SUV" name="body">
               SUV
             </option>
