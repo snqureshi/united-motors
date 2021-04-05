@@ -88,10 +88,39 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .all-heading {
+    font-size: 30px;
+    margin: 20px 100px;
+  }
+
   .each-car {
     width: 280px;
   }
   .all-car-image {
     width: 245px;
+  }
+
+  .search-input {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .all-heading {
+    font-size: 30px;
+    margin: 20px 100px;
+  }
+
+  .each-car {
+    width: 280px;
+  }
+  .all-car-image {
+    width: 245px;
+  }
+
+  .search-input {
+    width: 200px;
+    font-size: 12px;
   }
 }
