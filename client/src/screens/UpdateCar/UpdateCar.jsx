@@ -193,7 +193,7 @@ export default function UpdateCar(props) {
         </label>
         <label>
           Details:
-          <input
+          <textarea
             className="create-input"
             type="text"
             name="description"
