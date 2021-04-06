@@ -10,8 +10,8 @@ function Contact() {
         <div contact-blurb>
           Welcome to United Motors! Located in Deer Park, NY, we are your one
           stop shop for all your vehicle needs. Whether you're looking for a new
-          car, an used car, or servicing for your car, we can take care of it
-          all!
+          car, an used car, or are in need of servicing for your car, we can
+          take care of it all! Stop by or give us a call today!
         </div>
         <br />
         <div className="contact-address">

@@ -146,14 +146,50 @@ export default function UpdateCar(props) {
           />
         </label>
         <label>
-          Body type:
-          <input
-            className="create-input"
+          Body Type:
+          <select
+            className="create-drop"
             type="text"
             name="body"
-            value={body}
             onChange={handleChange}
-          />
+          >
+            <option value="Not Valid" name="body">
+              Select A Body Type
+            </option>
+            <option value="SUV" name="body">
+              SUV
+            </option>
+            <option value="Full-Size Sedan" name="body">
+              Full-Size Sedan
+            </option>
+            <option value="Mid-Size Sedan" name="body">
+              Mid-Size Sedan
+            </option>
+            <option value={body} name="body">
+              Compact Sedan{body}
+            </option>
+            <option value={body} name="body">
+              Subcompact Sedan{body}
+            </option>
+            <option value={body} name="body">
+              Coupe{body}
+            </option>
+            <option value={body} name="body">
+              Convertible{body}
+            </option>
+            <option value={body} name="body">
+              Station Wagon{body}
+            </option>
+            <option value={body} name="body">
+              Hatchback{body}
+            </option>
+            <option value={body} name="body">
+              Minivan{body}
+            </option>
+            <option value={body} name="body">
+              Pick-Up Truck{body}
+            </option>
+          </select>
         </label>
         <label>
           Details:

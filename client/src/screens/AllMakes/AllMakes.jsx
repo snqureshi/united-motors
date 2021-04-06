@@ -3,8 +3,6 @@ import React from "react";
 export default function AllMakes(props) {
   const { makes } = props;
 
-  console.log(makes);
-
   return (
     <div>
       <h3>All Makes</h3>
