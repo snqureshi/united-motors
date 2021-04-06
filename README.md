@@ -81,30 +81,29 @@ src
 
 #### Time Estimates
 
-| Task                                                                                                      | Priority | Estimated Time | Time Invested | Actual Time |
-| --------------------------------------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Initial Setup (Setting up models and migration files/Cors)                                                |    H     |     3 hrs      |     2 hrs     |     TBD     |
-| Create Seed Data                                                                                          |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| Create CRUD Actions in controller files for Cars                                                          |    H     |     2 hrs      |     1 hr      |     TBD     |
-| Create CRUD Actions in controller files for Models                                                        |    H     |      1 hr      |    0.5 hrs    |     TBD     |
-| Create CRUD Actions in controller files for Makes                                                         |    H     |      1 hr      |    0.5 hrs    |     TBD     |
-| Create CRUD Actions in controller files for Users                                                         |    H     |    2.5 hrs     |    0.5 hrs    |     TBD     |
-| Set up Authentication controller                                                                          |    H     |      1 hr      |      1hr      |     TBD     |
-| Test backend routes with Postman                                                                          |    H     |      1 hr      |     3 hrs     |    3 hrs    |
-| Setup React Components                                                                                    |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| Connect and test backend/frontend relationship in services                                                |    H     |     3 hrs      |      TBD      |     TBD     |
-| Build out frontend CRUD in main container for cars                                                        |    H     |     3 hrs      |      TBD      |     TBD     |
-| Build out frontend CRUD in appointment container for appointments                                         |    H     |     3 hrs      |      TBD      |     TBD     |
-| Build out sign up and sign in screens                                                                     |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| Build out and test all cars screen                                                                        |    H     |     2 hrs      |      TBD      |     TBD     |
-| Build out and test car details screen                                                                     |    H     |     2 hrs      |      TBD      |     TBD     |
-| Build out and test update car screen                                                                      |    H     |     2 hrs      |      TBD      |     TBD     |
-| Build out and test create car screen                                                                      |    H     |     2 hrs      |      TBD      |     TBD     |
-| Build out and test all makes and models screens                                                           |    L     |     3 hrs      |      TBD      |     TBD     |
-| Build out and test all appointments, create appointment, update appointment and delete appoinement screen |    M     |     3 hrs      |      TBD      |     TBD     |
-| Style to replicate wireframes                                                                             |    M     |     6 hrs      |      TBD      |     TBD     |
-| Implement media queries for mobile view                                                                   |    M     |     4 hrs      |      TBD      |     TBD     |
-| Total                                                                                                     |          |     51 hrs     |      TBD      |     TBD     |
+| Task                                                       | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Initial Setup (Setting up models and migration files/Cors) |    H     |     3 hrs      |     2 hrs     |    2 hrs    |
+| Create Seed Data                                           |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Create CRUD Actions in controller files for Cars           |    H     |     2 hrs      |    1.5 hrs    |   1.5 hrs   |
+| Create CRUD Actions in controller files for Models         |    H     |      1 hr      |    0.5 hrs    |   0.5 hrs   |
+| Create CRUD Actions in controller files for Makes          |    H     |      1 hr      |    0.5 hrs    |   0.5 hrs   |
+| Create CRUD Actions in controller files for Users          |    H     |    2.5 hrs     |    0.5 hrs    |   0.5 hrs   |
+| Set up Authentication controller                           |    H     |      1 hr      |      1hr      |    1 hr     |
+| Test backend routes with Postman                           |    H     |      1 hr      |     3 hrs     |    3 hrs    |
+| Setup React Components                                     |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Connect and test backend/frontend relationship in services |    H     |     3 hrs      |     1 hr      |    1 hr     |
+| Build out frontend CRUD in main container for cars         |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Build out sign up and sign in screens                      |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Build out and test all cars screen                         |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Build out and test car details screen                      |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Build out and test update car screen                       |    H     |     2 hrs      |     1 hr      |    1 hr     |
+| Build out and test create car screen                       |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Search functionality on Cars Page                          |    M     |     2 hrs      |     1 hr      |    1 hr     |
+| Style to replicate wireframes                              |    M     |     6 hrs      |    10 hrs     |    8 hrs    |
+| Implement media queries for mobile view                    |    M     |     4 hrs      |     4 hrs     |    4 hrs    |
+| Contact Page rendering with google maps                    |    L     |     2 hrs      |     1 hr      |    1 hr     |
+| Total                                                      |          |     51 hrs     |    43 hrs     |   43 hrs    |
 
 <br>
 
@@ -126,4 +125,39 @@ src
 - _Implement User Restriction so that only verified admins can access crud functionality for cars and other users can only access crud functionality on appoinments_
 - _Research websockets to implement chatbox to answer user inquiries in real time_
 
----
+## Code Showcase
+
+I was able to create an extensive drop down menu by mapping over my make and model tables instead of hard coding them in.
+
+```
+<label>
+          Make:
+          <select
+            className="create-drop"
+            required
+            name="make"
+            onChange={handleChange}
+          >
+            {makes.map((make, index) => (
+              <option key={index} value={make.name} name="make">
+                {make.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Model:
+          <select
+            className="create-drop"
+            required
+            name="model_id"
+            onChange={handleChange}
+          >
+            {models.map((model, index) => (
+              <option key={index} value={model.id} name="model_id">
+                {model.name}
+              </option>
+            ))}
+          </select>
+        </label>
+```
