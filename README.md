@@ -1,6 +1,6 @@
 ## Overview
 
-_**United Motors** is a full stack app that is designed to be utilized by a local car dealership. United Motors is a local car dealership in Deer Park, NY that has been around since 2006. Due to Covid19 and the economic recession that followed, they are in dire need of a website that will allow potential customers to browse through their inventory online from the safety of their home and also make appointments for viewing and test-drives. Admins and employees of United Motors will be able to add, update and delete cars as their collection changes._
+_**United Motors** is a full stack app using "React on Rails" stack that is designed to be utilized by a local car dealership. United Motors is a local car dealership in Deer Park, NY that has been around since 2006. Due to Covid19 and the economic recession that followed, they are in dire need of a website that will allow potential customers to browse through their inventory online from the safety of their home. Admins and employees of United Motors will be able to add, update and delete cars as their collection changes._
 <br>
 
 ## MVP
@@ -31,6 +31,7 @@ _The **United Motors** App will allow users to browse through all available cars
 |  Ruby On Rails  | _Back end framework to design and manage the database_              |
 | React Bootstrap | _Hamburger Menu for mobile view_                                    |
 |   jwt/bcrypt    | _User Authorization for sign-up/sign-in_                            |
+| google maps api | _Rendering Map on the contact page_                                 |
 
 <br>
 
@@ -53,6 +54,7 @@ src
   |__ Modal.jsx/
 |__ containers/
   |__ MainContainer.jsx/
+  |__ MapContainer.jsx/
 |__ layout/
   |__ Layout.jsx/
     |__ Nav.jsx/
@@ -61,8 +63,6 @@ src
   |__ AllCars.jsx/
   |__ MyCars.jsx/
   |__ CarDetail.jsx/
-    |__AllAppointments.jsx
-  |__CreateAppointment.jsx
   |__ UpdateCar.jsx/
   |__ CreateCar.jsx/
   |__ AllModels.jsx/

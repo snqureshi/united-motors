@@ -80,7 +80,7 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route exact path="/cars">
+          <Route path="/cars">
             <MainContainer currentUser={currentUser} />
           </Route>
           <Route path="/">
