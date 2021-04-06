@@ -103,7 +103,8 @@ src
 | Style to replicate wireframes                              |    M     |     6 hrs      |    10 hrs     |    8 hrs    |
 | Implement media queries for mobile view                    |    M     |     4 hrs      |     4 hrs     |    4 hrs    |
 | Contact Page rendering with google maps                    |    L     |     2 hrs      |     1 hr      |    1 hr     |
-| Total                                                      |          |     51 hrs     |    43 hrs     |   43 hrs    |
+| QA all pages                                               |    H     |     2 hrs      |     2 hr      |    2 hr     |
+| Total                                                      |          |     51 hrs     |    45 hrs     |   45 hrs    |
 
 <br>
 
