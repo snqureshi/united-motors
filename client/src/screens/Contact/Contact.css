@@ -1,0 +1,13 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details {
+  background-color: white;
+  max-width: 60vw;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: left;
+}

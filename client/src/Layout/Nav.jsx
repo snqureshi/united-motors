@@ -30,6 +30,9 @@ const alwaysOptions = (
     <Nav.Link className="nav-tabs" href="/cars">
       Available Cars
     </Nav.Link>
+    <Nav.Link className="nav-tabs" href="/contact">
+      Contact Us
+    </Nav.Link>
   </>
 );
 

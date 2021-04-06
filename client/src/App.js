@@ -68,9 +68,6 @@ function App() {
     <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
-          <Route path="/login">
-            <Login handleLogin={handleLogin} />
-          </Route>
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
@@ -83,8 +80,11 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/">
+          <Route exact path="/cars">
             <MainContainer currentUser={currentUser} />
+          </Route>
+          <Route path="/">
+            <Login handleLogin={handleLogin} />
           </Route>
         </Switch>
       </Layout>
