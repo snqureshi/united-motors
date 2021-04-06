@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import MapContainer from "../../containers/MapContainer";
 
 function Contact() {
   return (
@@ -14,12 +15,15 @@ function Contact() {
         </div>
         <br />
         <div className="contact-address">
-          Address: 1080 Long Island Ave, Deer Park, NY 11729
+          &#127968; 1080 Long Island Ave, Deer Park, NY 11729
         </div>
+        <MapContainer />
         <br />
-        <div className="contact-number">Phone: 631-522-1200</div>
+        <div className="contact-number">&#128241; 631-522-1200</div>
         <br />
-        <div className="contact-email">Email: unitedmotors_cars@gmail.com</div>
+        <div className="contact-email">
+          &#128231; unitedmotors_cars@gmail.com
+        </div>
         <br />
       </div>
     </div>
